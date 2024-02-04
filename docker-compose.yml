@@ -1,0 +1,26 @@
+version: '3'
+services:
+  rtsp2hls:
+    image: rtsp2hls 
+    ports:
+      - "7123:7123"
+      - "4123:4123"
+  rtsp_viewer:
+  	image: rtsp_viewer
+  	ports:
+  	- "5173":"5173"
+  mongodb:
+    image: mongo:6-jammy
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata6:/data/db
+    networks:
+      - node-network
+
+volumes:
+  dbdata6:
+
+networks:
+  node-network:
+    driver: bridge
