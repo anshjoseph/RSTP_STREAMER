@@ -1,0 +1,1 @@
+docker run -p 27017:27017 --network bridge -name db1 mongo:6-jammy

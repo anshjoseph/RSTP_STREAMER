@@ -1,0 +1,1 @@
+docker run -p 7000:7000 --network bridge --name ch1 canvas_handler
