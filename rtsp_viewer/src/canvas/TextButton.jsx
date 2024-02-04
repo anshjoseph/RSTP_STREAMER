@@ -16,7 +16,7 @@ function TextButton({setData,data}) {
                 setData(_data)
                 // console.log(_data)
                 
-            }}>Set Text</button>
+            }} className="border-2 border-black cursor-pointer">Set Text</button>
             
         </div>
 

@@ -26,7 +26,7 @@ function LeftPanel({ setUrl }) {
     return rtsp_btn
   }
   return (
-    <div className="h-[95vh] w-[20vw] bg-slate-500 flex flex-col">
+    <div className="h-[95vh] w-[20vw] bg-slate-500 flex flex-col justify-around">
       <div className='flex flex-row justify-between items-baseline ml-2 mr-2'>
         <p className='text-2xl text-white'>RTSP Config</p>
         <img src={add_icon} alt="wait" className='h-5 w-5' onClick={() => {
@@ -48,7 +48,7 @@ function LeftPanel({ setUrl }) {
       </div>
       <hr></hr>
 
-      <div className='flex flex-col ml-2 mr-2 mt-5 gap-y-3 mb-5 overflow-y-auto'>
+      <div className='flex flex-col ml-2 mr-2 mt-5 gap-y-3 mb-5 h-80 overflow-y-auto'>
         {/* <RtspButton setUrl={setUrl} url={"https://video.gumlet.io/5f462c1561cf8a766464ffc4/635789f017629894d4d125a4/main.m3u8"} name={"hell"} /> */}
         {
           createRTSP()
@@ -58,7 +58,7 @@ function LeftPanel({ setUrl }) {
       <div className='flex flex-col border-2 border-grap-900 overflow-y-auto'>
         <p className='text-2xl text-white'>FAQ</p>
         <hr></hr>
-        <div className='m-2 flex flex-col gap-y-3'>
+        <div className='m-2 flex flex-col gap-y-3 h-40m'>
           <div>
             <p>1. How close Formatting option ?</p>
             <p>Ans: just double click the selected object again the formatting option is closed</p>

@@ -56,7 +56,7 @@ function Canvas({ url }) {
                         .then(response => response.json()) // Assuming the server responds with JSON
                         .then(data => console.log(data)) // Handling the response data
                         .catch(error => console.error('Error:', error));
-                }}>SAVE</button>
+                }} className="border-2 border-black cursor-pointer">SAVE</button>
                 <button onClick={()=>{
                     fetch(`http://0.0.0.0:7000/get/?url=${url.split("/")[4]}`)
                     .then((response) => response.json())
@@ -77,7 +77,7 @@ function Canvas({ url }) {
                     .catch((err) => {
                         console.log(err.message);
                     });
-                }}>Refresh</button>
+                }} className="border-2 border-black cursor-pointer">Refresh</button>
             </div>
 
 
