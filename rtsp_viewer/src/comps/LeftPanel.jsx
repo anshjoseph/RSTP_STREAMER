@@ -68,7 +68,15 @@ function LeftPanel({ setUrl }) {
             <p>2. Importance of deleting un-used RTSP stream ?</p>
             <p>Ans: if you did not delete the RTSP stream it become a bigger problem as it will result in crashing of the RSTP coverter micro service because it did not have setting to let it scale and use full capabilty of docker </p>
           </div>
-
+          <div>
+            <p>3. add rtsp link not showing up ?</p>
+            <p>Ans: just refresh the page </p>
+          </div>
+          <div>
+            <p>4. overlay is not showing up ?</p>
+            <p>Ans: click the refresh on right hand side </p>
+          </div>
+          <code>Sorry for shitty UI i am not good at UI, but i can do it better</code>
         </div>
       </div>
 
